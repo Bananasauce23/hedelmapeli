@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Hedelmäpeli</title>
+</head>
+<body>
+    <h1>HEDELMÄPELI</h1>
+    <div id="panosdiv">
+        <span id="rahamaara">RAHAA: 50€</span><br><br>
+        <span id="panos">PANOS: 1€</span><br><br>
+        <div class="panosvaihtoehdot">
+            <div id="panos1">
+                <img class="euroImg" src="imgs/euro.png"><br>
+                <span class="panosluku">1€</span>
+            </div>
+            <div id="panos2">
+                <img class="euroImg" src="imgs/euro.png"><br>
+                <span class="panosluku">2€</span>
+            </div>
+            <div id="panos3">
+                <img class="euroImg" src="imgs/euro.png"><br>
+                <span class="panosluku">3€</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="rullat">
+        <div class="rullalukko">
+            <img id="rulla1" name="kuvat1" src="imgs/cherry.png"><br>
+            <img id="lukko1" src="imgs/unlocked.png">
+        </div>
+        <div class="rullalukko">
+            <img id="rulla2" name="kuvat2" src="imgs/pear.png"><br>
+            <img id="lukko2" src="imgs/unlocked.png">
+        </div>
+        <div class="rullalukko">
+            <img id="rulla3" name="kuvat3" src="imgs/melon.png"><br>
+            <img id="lukko3" src="imgs/unlocked.png">
+        </div>
+        <div class="rullalukko">
+            <img id="rulla4" name="kuvat4" src="imgs/apple.png"><br>
+            <img id="lukko4" src="imgs/unlocked.png">
+        </div>
+    </div>
+
+    <div id="voitto">
+        <div id="kirsikat">
+            <div class="kuvarivi">
+                <img class="kuvarivikuvat" src="imgs/cherry.png">
+                <img class="kuvarivikuvat" src="imgs/cherry.png">
+                <img class="kuvarivikuvat" src="imgs/cherry.png">
+                <img class="kuvarivikuvat" src="imgs/cherry.png">
+                <div class="voittomaara">
+                    <span id="kirsikkavoitto">3</span>
+                    <img class="minieuro" src="imgs/euro.png">
+                </div>
+            </div>
+        </div>
+        <div id="paarynat">
+            <div class="kuvarivi">
+                <img class="kuvarivikuvat" src="imgs/pear.png">
+                <img class="kuvarivikuvat" src="imgs/pear.png">
+                <img class="kuvarivikuvat" src="imgs/pear.png">
+                <img class="kuvarivikuvat" src="imgs/pear.png">
+                <div class="voittomaara">
+                    <span id="paarynavoitto">4</span>
+                    <img class="minieuro" src="imgs/euro.png">
+                </div>
+            </div>
+        </div>
+        <div id="melonit">
+            <div class="kuvarivi">
+                <img class="kuvarivikuvat" src="imgs/melon.png">
+                <img class="kuvarivikuvat" src="imgs/melon.png">
+                <img class="kuvarivikuvat" src="imgs/melon.png">
+                <img class="kuvarivikuvat" src="imgs/melon.png">
+                <div class="voittomaara">
+                    <span id="melonivoitto">5</span>
+                    <img class="minieuro" src="imgs/euro.png">
+                </div>
+            </div>
+        </div>
+        <div id="seiskat3">
+            <div class="kuvarivi">
+                <img class="kuvarivikuvat" src="imgs/seven.png">
+                <img class="kuvarivikuvat" src="imgs/seven.png">
+                <img class="kuvarivikuvat" src="imgs/seven.png">
+                <div class="voittomaara">
+                    <span id="seiskavoitto3">5</span>
+                    <img class="minieuro" src="imgs/euro.png">
+                </div>
+            </div>
+        </div>
+        <div id="omenat">
+            <div class="kuvarivi">
+                <img class="kuvarivikuvat" src="imgs/apple.png">
+                <img class="kuvarivikuvat" src="imgs/apple.png">
+                <img class="kuvarivikuvat" src="imgs/apple.png">
+                <img class="kuvarivikuvat" src="imgs/apple.png">
+                <div class="voittomaara">
+                    <span id="omenavoitto">6</span>
+                    <img class="minieuro" src="imgs/euro.png">
+                </div>
+            </div>
+        </div>
+        <div id="seiskat4">
+            <div class="kuvarivi">
+                <img class="kuvarivikuvat" src="imgs/seven.png">
+                <img class="kuvarivikuvat" src="imgs/seven.png">
+                <img class="kuvarivikuvat" src="imgs/seven.png">
+                <img class="kuvarivikuvat" src="imgs/seven.png">
+                <div class="voittomaara">
+                    <span id="seiskavoitto4">10</span>
+                    <img class="minieuro" src="imgs/euro.png">
+                </div>
+            </div>
+        </div>
+        <span id="voittotarkastus"></span>
+    </div>
+    
+    <button id="pelaa">PELAA</button>
+</body>
+    <script src="script.js"></script>
+</html>
